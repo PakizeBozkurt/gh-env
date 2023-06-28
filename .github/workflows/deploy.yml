@@ -9,8 +9,11 @@ env:
   MONGODB_DB_NAME: gha-node
 jobs:
   test:
-    env: MONGODB_CLUSTER_ADDRESS:gh-node.x2qkwdm.mongodb.net MONGODB_USERNAME:pakize
-      MONGODB_PASSWORD:012345 PORT:9090
+    env:
+      MONGODB_CLUSTER_ADDRESS:gh-node.x2qkwdm.mongodb.net
+      MONGODB_USERNAME:pakize
+      MONGODB_PASSWORD:012345
+      PORT:9090
     environment: testing
     runs-on: ubuntu-latest
     steps:
