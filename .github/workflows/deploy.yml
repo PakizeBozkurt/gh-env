@@ -1,3 +1,4 @@
+---
 name: Deployment
 on:
   push:
@@ -5,14 +6,11 @@ on:
       - main
       - dev
 env:
-  MONGODB_DB_NAME: gha-node  
+  MONGODB_DB_NAME: gha-node
 jobs:
   test:
-    env:
-      MONGODB_CLUSTER_ADDRESS:gh-node.x2qkwdm.mongodb.net
-      MONGODB_USERNAME:pakize
-      MONGODB_PASSWORD:012345
-      PORT:9090
+    env: MONGODB_CLUSTER_ADDRESS:gh-node.x2qkwdm.mongodb.net MONGODB_USERNAME:pakize
+      MONGODB_PASSWORD:012345 PORT:9090
     environment: testing
     runs-on: ubuntu-latest
     steps:
@@ -37,6 +35,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output information
-        run: |        
+        run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
           echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}"
