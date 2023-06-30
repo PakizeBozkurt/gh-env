@@ -8,3 +8,6 @@
 - Eg: Database access password
 
 -Use secret -> Together with environment variables
+
+-GitHub Environments
+ - workflow Jobs can target Environment
