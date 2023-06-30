@@ -9,5 +9,5 @@
 
 -Use secret -> Together with environment variables
 
--GitHub Environments
+-GitHub Repo Environments
  - workflow Jobs can target Environment
