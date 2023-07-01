@@ -77,3 +77,11 @@ jobs:
 
 #The sixth step is to "Output information" using the echo command. 
 #It prints the value of the MONGODB_USERNAME environment variable.
+
+#The deploy section specifies another job named "deploy". 
+#This job depends on the successful completion of the "test" job (defined by needs: test).
+
+#The "deploy" job runs on an "ubuntu-latest" machine.
+
+#The steps section of the "deploy" job contains a single step, which is to "Output information" similar to the previous job. 
+#It prints the values of the MONGODB_USERNAME and MONGODB_DB_NAME environment variables.
