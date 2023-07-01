@@ -68,3 +68,12 @@ jobs:
 #This step caches the dependencies of the project, specifically the NPM packages, to speed up future builds.
 
 #The third step is to "Install dependencies" using the npm ci command, which installs the project dependencies based on the package-lock.json file.
+
+#The fourth step is to "Run server" using the npm start command, which starts the server. 
+#The & symbol is used to run the command in the background, 
+#and the npx wait-on http://127.0.0.1:$PORT command waits until the server is up and running before proceeding to the next step.
+
+#The fifth step is to "Run tests" using the npm test command, which executes the tests for the project.
+
+#The sixth step is to "Output information" using the echo command. 
+#It prints the value of the MONGODB_USERNAME environment variable.
