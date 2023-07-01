@@ -61,3 +61,10 @@ jobs:
 
 #The steps section contains a list of tasks to be executed within the job. 
 #These tasks are executed sequentially.
+
+#The first step is to "Get Code" using the actions/checkout@v3 action, which retrieves the source code from the repository.
+
+#The second step is to "Cache dependencies" using the actions/cache@v3 action. 
+#This step caches the dependencies of the project, specifically the NPM packages, to speed up future builds.
+
+#The third step is to "Install dependencies" using the npm ci command, which installs the project dependencies based on the package-lock.json file.
