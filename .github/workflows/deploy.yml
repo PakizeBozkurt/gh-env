@@ -39,4 +39,15 @@ jobs:
       - name: Output information
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-          echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}"
+          echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}
+
+
+# A configuration file for a deployment process, likely used in a continuous integration/continuous deployment (CI/CD) pipeline. 
+
+# The code starts by specifying the name of the deployment as "Deployment".
+
+#The on section defines the triggers for this deployment. 
+#In this case, it is triggered on a push event to the "main" or "dev" branches of the repository.
+
+#The env section sets environment variables that will be used in the deployment process. 
+#Here, it defines a variable called MONGODB_DB_NAME with the value "gha-node".
